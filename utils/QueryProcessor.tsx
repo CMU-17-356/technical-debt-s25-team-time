@@ -13,11 +13,6 @@ export default function QueryProcessor(query: string): string {
     );
   }
 
-  if (query.toLowerCase().includes("what is your andrew id?")) {
-    return (
-      "switt"
-    );
-  }
 
   if (query.toLowerCase().includes("which of the following numbers is the largest:")) {
     const query_array = query.toLowerCase().split(" ");
@@ -51,7 +46,7 @@ export default function QueryProcessor(query: string): string {
     let answer = 0;
     for (var i=0; i < 8; i++) {
       if (isSquareAndCube(i)) {
-        const answer = i;
+        answer = i;
       }
     }
     return (
@@ -137,6 +132,7 @@ export default function QueryProcessor(query: string): string {
       (num_one ** num_two).toString()
     );
   }
+
 
 
   return "";
