@@ -98,7 +98,7 @@ export default function QueryProcessor(query: string): string {
     let answer = 0;
     for (var i=0; i < 5; i++) {
       if (isPrime(i)) {
-        const answer = i;
+        answer = i;
       }
     }
     return (
