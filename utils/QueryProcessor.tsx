@@ -42,11 +42,11 @@ export default function QueryProcessor(query: string): string {
     const num_five = parseInt(query_array[17]);
     const num_six = parseInt(query_array[18]);
     const num_seven = parseInt(query_array[19]);
-    const num_array = [];
+    const num_array: number[] = [];
     let answer = 0;
     for (var i=0; i < 8; i++) {
       if (isSquareAndCube(num_array[i])) {
-        answer = i;
+        answer = num_array[i];
       }
     }
     return (
@@ -94,11 +94,11 @@ export default function QueryProcessor(query: string): string {
     const num_three = parseInt(query_array[9]);
     const num_four = parseInt(query_array[10]);
     const num_five = parseInt(query_array[11]);
-    const num_array = [];
+    const num_array: number[] = [];
     let answer = 0;
     for (var i=0; i < 5; i++) {
       if (isPrime(num_array[i])) {
-        answer = i;
+        answer = num_array[i];
       }
     }
     return (
