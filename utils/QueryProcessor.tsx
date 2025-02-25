@@ -45,7 +45,7 @@ export default function QueryProcessor(query: string): string {
     const num_array = [];
     let answer = 0;
     for (var i=0; i < 8; i++) {
-      if (isSquareAndCube(i)) {
+      if (isSquareAndCube(num_array[i])) {
         answer = i;
       }
     }
@@ -97,7 +97,7 @@ export default function QueryProcessor(query: string): string {
     const num_array = [];
     let answer = 0;
     for (var i=0; i < 5; i++) {
-      if (isPrime(i)) {
+      if (isPrime(num_array[i])) {
         answer = i;
       }
     }
